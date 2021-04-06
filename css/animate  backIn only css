@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html,body {
+height:100%;
+}
+.bounce {
+position: absolute;
+left: 65%; 
+top: 200px;
+background-color:red;
+height: 100px;
+width: 100px;
+box-shadow: 0 0 1px 10px red ;
+border-radius: 50%;
+cursor: pointer; 
+animation:bounceOut 2s  ease ;
+}
+
+
+@keyframes bounceOut {
+0%{ 
+transform:translate(1000px,0px);
+
+}
+50%{ 
+opacity: 0.3;
+transform:scale(0.5,0.5);
+
+}
+80%{ 
+transform:scale(1.5,1.5);
+
+}
+
+100%{ 
+transform:translate(0px,0px);
+}
+}
+
+.bounce2 {
+position: absolute;
+left: 35%; 
+top: 200px;
+background-color:red;
+height: 100px;
+width: 100px;
+box-shadow: 0 0 1px 10px red ;
+border-radius: 50%;
+cursor: pointer; 
+animation:bounceOut2 2s  ease ;
+}
+
+
+@keyframes bounceOut2 {
+0%{ 
+transform:translate(-1000px,0px);
+
+}
+50%{ 
+opacity: 0.3;
+transform:scale(0.5,0.5);
+
+}
+80%{ 
+transform:scale(1.5,1.5);
+
+}
+
+100%{ 
+transform:translate(0px,0px);
+}
+}
+
+.bounce3 {
+position: absolute;
+left: 50%; 
+top: 100px;
+background-color:red;
+height: 100px;
+width: 100px;
+box-shadow: 0 0 1px 10px red ;
+border-radius: 50%;
+cursor: pointer; 
+animation:bounceOut3 2s  ease ;
+}
+
+
+@keyframes bounceOut3 {
+0%{ 
+transform:translate(0px,1000px);
+
+}
+50%{ 
+opacity: 0.3;
+transform:scale(0.5,0.5);
+
+}
+80%{ 
+transform:scale(1.5,1.5);
+
+}
+
+100%{ 
+transform:translate(0px,0px);
+}
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="bounce" >
+</div>
+<div class="bounce2" >
+</div>
+
+<div class="bounce3" >
+</div>
+
+</body>
+</html>
