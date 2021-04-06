@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+html,body {
+  height:100%;
+}
+		.bounce {
+      	position: absolute;
+		    left: 50%; 
+		    top: 50px;
+        background-color:red;
+				height: 100px;
+				width: 100px;
+				box-shadow: 0 0 1px 10px red ;
+				border-radius: 50%;
+      }
+
+				.bounce:hover {
+					cursor: pointer; 
+          animation:bounceOut 1s  ease ;
+         }
+				
+
+@keyframes bounceOut {
+        0%{ 
+  -webkit-transform:translate(0px,0px);
+  -moz-transform:translate(0px,0px);
+  -ms-transform:translate(0px,0px);
+  -o-transform:translate(0px,0px);
+  transform:translate(0px,0px);
+  }
+        20%{ 
+  -webkit-transform:translate(0px,10px);
+  -moz-transform:translate(0px,10px);
+  -ms-transform:translate(0px,10px);
+  -o-transform:translate(0px,10px);
+  transform:translate(0px,10px);
+  }
+        40%{ 
+  -webkit-transform:translate(0px,0px);
+  -moz-transform:translate(0px,0px);
+  -ms-transform:translate(0px,0px);
+  -o-transform:translate(0px,0px);
+  transform:translate(0px,0px);
+  }
+        60%{ 
+  -webkit-transform:translate(0px,-10px);
+  -moz-transform:translate(0px,-10px);
+  -ms-transform:translate(0px,-10px);
+  -o-transform:translate(0px,-10px);
+  transform:translate(0px,-10px);
+  }
+        80%{ 
+  -webkit-transform:translate(0px,6px);
+  -moz-transform:translate(0px,6px);
+  -ms-transform:translate(0px,6px);
+  -o-transform:translate(0px,6px);
+  transform:translate(0px,6x);
+  }
+        100%{ 
+  -webkit-transform:translate(0px,0px);
+  -moz-transform:translate(0px,0px);
+  -ms-transform:translate(0px,0px);
+  -o-transform:translate(0px,0px);
+  transform:translate(0px,0px);
+  }
+      }
+
+
+</style>
+</head>
+<body>
+
+<!--
+<div class="bounce" onclick="myFunction()">
+</div>
+-->
+<div class="bounce" >
+</div>
+
+<script>
+// using js 
+/*
+function myFunction(){
+var element = document.getElementById("bounce");
+element.style.animation = "bounceOut 1s  ease";
+}
+*/
+/* 
+var element = document.querySelector(".bounce");
+element.addEventListener("click",function(){
+element.style.animation = "bounceOut 5s infinite alternate ";
+});
+*/
+</script>
+</body>
+</html>
