@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+@keyframes slide{
+  0% {
+    width: 0%;
+  }
+  
+  40%, 100% {
+    width: 100%;
+  }
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.outer {
+  display: inline-block;
+  position: relative;
+  color: rgba(128, 128, 128, 0.25);
+  
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #1a1a1a;
+}
+
+.inner {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slide 3s ease-in-out;
+}
+
+
+</style>
+<body>
+<div class="container">
+  <div class="outer">
+    <h1 class="text">I'm a Frontend Developer</h1>
+    <div class="inner">
+      <h1 class="text">I'm a Frontend Developer</h1>
+    </div>
+  </div>
+</div>
+</body>
+</html>
