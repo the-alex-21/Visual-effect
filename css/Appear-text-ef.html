@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .triger{
+      margin-top: 1000px;
+      margin-bottom: 1000px;
+      border: 1px solid black;
+    }
+    /*Syart cool animation*/
+    .intro-text{
+      width:60%;
+      width: 30%;
+      opacity: 0;
+      transform: translate(0px, 40px);
+      transition: 1s all ease-in-out;
+    }
+    .intro-appear{
+      opacity:1;
+      transform: translateY(0px);
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="triger">
+    <div class="intro-text">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+  </div>
+    <script type="text/javascript">
+    function scrollAppear(){
+      var introText = document.querySelector(".intro-text");
+      var introPosition = introText.getBoundingClientRect().top;
+      //console.log(introPosition);
+      // To find the tistace from the top to the introText
+      var screenPosition = window.innerHeight / 1.5;//Find the height of the window
+
+      if(introPosition < screenPosition){
+        introText.classList.add('intro-appear');
+
+      }
+    }
+
+    window.addEventListener('scroll',scrollAppear);
+    scrollAppear();
+    </script>
+  </body>
+</html>
